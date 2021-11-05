@@ -68,8 +68,11 @@ const LoginView = (props) => {
 };
 
 LoginView.propTypes = {
-  username: PropTypes.string,
-  onUsernameChange: PropTypes.func,
+  credentials: PropTypes.object,
+  errors: PropTypes.object,
+  handleSubmit: PropTypes.func,
+  onSubmitClick: PropTypes.func,
+  register: PropTypes.func,
 };
 
 export default LoginView;
